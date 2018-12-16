@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Mina|Press+Start+2P');
+html,h1,h2,h3,h4,h5,h6,a{
+ font-family: 'Mina', sans-serif;
+}
+.navbar{
+	background:#F97300;
+
+}
+.nav-link{
+	margin-right: 1em !important;
+	color:white;
+}
+.nav-link:hover{
+	background:#000000;
+	color:#f97300;
+}
+/*.navbar-collapse{
+	justify-content: flex-end;
+}
+.navbar-toggler{
+	background:#fff !important;
+}
+/*.bg-dark{
+	background-color:#343a40 !important;
+}*/
+.navbar-brand{
+	color:white;
+}
+
+.products{
+	margin: 4em 0;
+	/*position: relative;
+	//float:right;
+	//display: inline;*/
+}
+.card{
+	margin: 2px 2px 2px 2px;
+	
+}
+
+.images{
+	height: auto;
+	width: 100%
+}
