@@ -2,9 +2,13 @@
 <html>
 <head>
 	<meta name="keywords" content="Compare price at different website and get the best deal"/>
+	<meta charset="utf-8">
 	<title>Price-Hunt | Best Deals</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css" integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="./assets/home.css">
+
 </head>
 <body>
 	<div class="container-fluid">
@@ -52,64 +56,66 @@
 	</nav>
 	<div class="container">
 		<div class="row products">
-			<div class="card col-md-4 col-sm-6" style="width: 18rem; margin-bottom: 10px">
-		  		<a href="books.html">	
-		  			<img src="./assets/photos/the_jungle_book.jpg" alt="Books"  width="240" height="340">
-				</a>
-
+			<div class="card col-md-4 col-sm-6" style="width: 18rem;">
+		  		<img src="./assets/photos/the_jungle_book.jpg" alt="Books"  width="240" height="340">
 			  	<div class="card-body">
-
 			    <h5 class="card-title">THE JUNGLE BOOK</h5>
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			    <a href="books.html" class="btn btn-primary" target="_blank">Compare Price</a>
+			        <p>Adventures in the wild
+On a warm evening in the Seeonee hills, a family of wolves finds someone at the threshold of their cave–a human child, who knows nothing of the world of men. <span id="dots">...</span><span id="more">Adopted by Father Wolf, the man-cub Mowgli grows up with the pack in the Jungle.
+Mowgli begins his journey and learns the law of the Jungle with the help of his new-found friends: Bagheera the wise Panther and lovable old Baloo. Together they face many dangers and adventures, as Mowgli comes face-to-face with Shere Khan the tiger and the Bandar-Log.
+
+Embark on this adventurous journey with Mowgli, Rikki-tikki-tavi, Little Toomai and many others, as you read the enchanting 'The Jungle Book'. As you go from one thrilling escapade to the other, let Kipling take you into a world of fantasy</span></p>
+			 
+			   <button type="button" class="btn btn-primary btn-sm" onclick="readMore()" id="readMoreBtn">Read more</button>
+	
 			 </div>
 			</div>
 
-			<div class="card col-md-4 col-sm-6" style="width: 18rem; margin-bottom: 10px">
-				<a href="mobiles.html" target="_blank">
-				  <img src="./assets/photos/iphone.png" alt="Books" width="260" height="340">
-				</a>
+			<div class="card col-md-4 col-sm-6" style="width: 18rem;">
 			  <div class="card-body">
-			    <h5 class="card-title">IPHONE 6</h5>
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			    <a href="mobiles.html" class="btn btn-primary" target="_blank">Compare Price</a>
+			    <h5 class="card-title">PRICE COMPARISION</h5>
+			    <h5 class="card-title" id="book_name"></h5>
+			    <p class="card-text">Amazon : <span id="book_price1" class="fontStyle"></span></p>
+			    <p class="card-text">Flipkart:<span id="book_price2" class="fontStyle"></span></p>
+			    <p class="card-text">Shopclues:<span id="book_price3" class="fontStyle"></span></p>
+			    <p class="card-text">Paytm-Mall:<span id="book_price4" class="fontStyle"></span></p>
+			    <a href="https://www.amazon.in/Jungle-Book-Rudyard-Kipling/dp/8172344228" target="_blank" class="btn btn-primary">Buy On Lowest Price</a>
 			  </div>
 			</div>
-			<div class="card col-md-4 col-sm-6" style="width: 18rem; margin-bottom: 10px">
-				<a href="laptop.html" target="_blank">	
-		  			<img src="./assets/photos/mac_book_air.jpg" width="280" height="180">
-				</a>
-			  <div class="card-body">
-			    <h5 class="card-title">MAC BOOK AIR</h5>
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			    <a href="laptop.html" class="btn btn-primary" target="_blank">Compare Price</a>
-			  </div>
-			</div>
-			<div class="card col-md-4 col-sm-6" style="width: 18rem; margin-bottom: 10px">
-				<a href="tv.html" target="_blank">	
-				  <img class="card-img-top" src="./assets/photos/micromax_tv.jpg" alt="Books">
-				</a>
-			  <div class="card-body">
-			    <h5 class="card-title">MICROMAX TV</h5>
-			    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-			    <a href="tv.html" class="btn btn-primary" target="_blank">Compare Price</a>
-			  </div>
-			</div>
+		
+		
 		</div>
 	</div>
 
 
-
-	<!-- <script type="text/javascript" src="./assets/home.js"></script> -->
+	<script type="text/javascript" src="./assets/scripts/book.js"></script>
+	<script type="text/javascript" src="./assets/home.js"></script>
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </body>
 	<script>
-		function SEARCH(){
-		let search=document.getElementById('search_button');
-		console.log(search.value);
-		search.value=" ";
-}
+// 		function SEARCH(){
+// 		let search=document.getElementById('search_button');
+// 		console.log(search.value);
+// 		search.value=" ";
+// }
 	</script>
+<script>
+// function readMore() {
+//   var dots = document.getElementById("dots");
+//   var moreText = document.getElementById("more");
+//   var btnText = document.getElementById("myBtn");
+
+//   if (dots.style.display === "none") {
+//     dots.style.display = "inline";
+//     btnText.innerHTML = "Read more"; 
+//     moreText.style.display = "none";
+//   } else {
+//     dots.style.display = "none";
+//     btnText.innerHTML = "Read less"; 
+//     moreText.style.display = "inline";
+//   }
+// }
+</script>
 </html>
