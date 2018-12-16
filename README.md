@@ -1,2 +1,2 @@
-# PriceHatke
+# PriceHunt
 Price comparison web application
